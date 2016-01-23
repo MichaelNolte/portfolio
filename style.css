@@ -1,0 +1,51 @@
+
+body {
+	background-color: #ECECEA;
+	color: #558C89;
+	font-family: 'Roboto', sans-serif;
+}
+
+#header {
+	padding-left: 7%;
+	padding-right: 7%;
+	text-align: center;
+}
+
+.title {
+   background-image: url("images/settings4.png");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: 120px   
+}
+
+h1 {	
+	font-weight: 900;
+	color: #D9853B;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+p {
+	color: #74AFAD;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.filled-column {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+footer {
+	color: #558C89;
+}
+
+.nothing {
+    color: #558C89;
+    background-color: #74AFAD #D9853B;
+}
