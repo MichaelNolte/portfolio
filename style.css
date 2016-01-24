@@ -80,22 +80,35 @@ i {
 	padding-top: 0px;
 	padding-left: 5px;
 	padding-right: 5px;
+	padding-bottom: 200px;
 
 }
 
 a:link {
-    color: #74AFAD;;
+    color: #74AFAD;
 }
-a:visited{
+a:visited {
 	color: #74AFAD;
 }
-a:hover{
+a:hover {
 	color: #D9853B;
 }
 
-
-p.credits {
-	padding-top: 250px;
+#credits {
+	
+	background-color: #558C89;
+	padding-top: 7px;
 	padding-bottom: 0px;
+	margin-bottom: 0px;
 	font-size: 10px;
+	color: #ECECEA;
+}
+
+#credits a {
+	color: #ECECEA;
+	text-decoration: underline;
+}
+
+#credits a:hover {
+	color: #D9853B;
 }
