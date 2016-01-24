@@ -70,13 +70,19 @@ i {
 
 }
 
-p.impressum {
+a:link {
+    color: #74AFAD;;
+}
+a:visited{
+	color: #74AFAD;
+}
+a:hover{
+	color: #D9853B;
+}
+
+
+p.credits {
 	padding-top: 250px;
 	padding-bottom: 0px;
 	font-size: 10px;
-}
-
-.nothing {
-    color: #558C89;
-    background-color: #74AFAD #D9853B;
 }
