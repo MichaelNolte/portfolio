@@ -44,18 +44,31 @@ h3 {
 	padding-right: 5%;
 	color: #74AFAD;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
 
 }
 
-
 .filled-column {
+	position: relative;
     max-width: 100%;
     padding: 0px;
     margin: 0px;
 
 }
 
+.description {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	min-height: 100%;
+	background: #558C89;
+	color: #ECECEA;
+	opacity: 0;
+}
+
+.filled-column:hover .description {
+	opacity: 0.6;
+}
 
 footer p {
 	padding-top: 60px;
