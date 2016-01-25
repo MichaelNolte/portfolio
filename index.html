@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael Nolte, Web Development Portfolio</title>
+    <title>michael nolte, web development portfolio</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="bootstrap/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -16,38 +16,43 @@
 
   <body>
     
-    <div class="dropdown" role="navigation">
-      <div id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fa fa-bars fa-3x"></i>
-      <span></span>
-      </div>
-      <ul class="dropdown-menu" aria-labelledby="dLabel">
-        <li><a href="#header">home</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </div>
-
-    <div class="container-fluid">
-    
-
-      <div id="header" class="row">
-          
-
-        <div class="col-xs-12 title">          
-          <h1>web development portfolio</h2>
-          <h2>michael nolte</h1>
+      <div class="dropdown" role="navigation">
+        <div id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-bars fa-3x"></i>
+        <span></span>
         </div>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a href="#header">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    
+    <div id="content">
+    
+      <div id="header">
           
-      </div> 
+
+        <div class="title">          
+          <div class="main-title">
+            <h1>web development portfolio</h2>
+          </div>
+          <div class="subtitle">
+            <h2>michael nolte</h1>
+          </div>
+        </div>
         
-        <div id="about" class="row"> 
-          <div class="col-xs-12">
-            <p>hi, i am michael. i take web development classes at udacity. on this page i showcase my projects.</p>
-          </div>    
-        </div>     
+        <div class="logo center-block">
+          <img src="images/settings4.svg">
+        </div>  
+        
+        <div id="about"> 
+          <p>hi, i am michael. i take web development classes at udacity. on this page i showcase my projects.</p>
+        </div>         
       </div>
 
-      <div id="projects">
+      <div id="projects" class="container-fluid">
         
         <div class="row">
           <div class="col-xs-6 filled-column">
@@ -122,24 +127,24 @@
         </div>
       </div>
     
-      <footer id="contact">
-        <div class="row text-center">
-          <div class="col-xs-12">
-            <h3>want to get in touch?</h3>
-            <p>shoot me a mail or connect via github or linkedin</p>
-            
-            <a href="mailto:michaelnolte0815@gmail.com?Subject=I%20Visited%20Your%20Portfolio%20Page" target="_top"><i class="fa fa-envelope-square fa-3x"></i></a>
-
-            <a href="https://github.com/MichaelNolte" title="github"><i class="fa fa-github-square fa-3x"></i></a>
-
-            <a href="https://de.linkedin.com/in/michael-nolte-870016b4"><i class="fa fa-linkedin-square fa-3x" title="linkedin"></i></a>
-            
-            <p id="credits">Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a><br>Font Awesome by Dave Gandy - <a href="http://fontawesome.io" title="fontawesome">http://fontawesome.io</a></p>
-          </div>
+      <div id="contact">
+        <div class="connect">
+          <h3>want to get in touch?</h3>
         </div>
-      </footer>
-
+        <div class="connect">  
+          <p>shoot me a mail or connect via github or linkedin</p>
+        </div>  
+          
+        <div class="connect-icons img-responsive">    
+          <a href="mailto:michaelnolte0815@gmail.com?Subject=I%20Visited%20Your%20Portfolio%20Page" target="_top"><i class="fa fa-envelope-square fa-5x"></i></a>
+          <a href="https://github.com/MichaelNolte" title="github"><i class="fa fa-github-square fa-5x"></i></a>
+          <a href="https://de.linkedin.com/in/michael-nolte-870016b4"><i class="fa fa-linkedin-square fa-5x" title="linkedin"></i></a>
+        </div>
+          
+        <div id="copyright">  
+          <p>Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a><br>Font Awesome by Dave Gandy - <a href="http://fontawesome.io" title="fontawesome">http://fontawesome.io</a></p>
+        </div>       
+      </div>
     </div>
-
   </body>
 </html>
