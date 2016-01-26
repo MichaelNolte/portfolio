@@ -1,3 +1,8 @@
+/* to-do's: get rid of frame on bottom */
+/* change about-element: use media queries or insert image in same column*/
+/* change navigation button in active and focus state */
+
+
 
 body {
 	background-color: #ECECEA;
@@ -106,12 +111,12 @@ h3 {
 
 .intro {
 	width: 100%;
-	min-height: 12vh;
-	padding-top: 1%;
-	padding-bottom: 5%;
+	min-height: 10vh;
+	padding-top: 80px;
+	padding-bottom: 4%;
 	font-weight: 900;
-	padding-left: 7%;
-	padding-right: 7%;
+	padding-left: 8%;
+	padding-right: 8%;
 }
 
 
@@ -122,6 +127,22 @@ h3 {
 	font-weight: 900;
 }
 
+
+
+.portrait img {
+	max-height: 140px;
+}
+
+.aboutbox {
+	padding-top: 5vw;
+	padding-bottom: 1vw;
+	min-height: 40vh;
+}
+
+text {
+	font-weight: 300;
+	font-size: 1.5vmax;
+}
 
 .btn-info.active.focus, .btn-info.active:focus, .btn-info.focus, .btn-info:active.focus, .btn-info:active:focus, .btn-info:focus, .btn-info:hover {
     outline: 0;
