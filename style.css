@@ -7,13 +7,26 @@ body {
 	data-spy="scroll";
 }
 
+.container-fluid {
+	padding: 0;
+}
+
+.row {
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
 #header {
-	padding-top: 6vh;
 	height: 100vh;
 	position: relative;
+	padding-top: 6vh;
 }
 
 .title {
+	min-height:80vh;
 	padding-left: 7%;
 	padding-right: 7%;
 }
@@ -35,7 +48,7 @@ h1 {
 
 h2 {
     font-weight: 900;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 p {
@@ -48,11 +61,36 @@ h3 {
 	font-weight: 900
 }
 
-.logo {
-	max-width: 8%;
-	position: 50% 50%;
-	padding-bottom: 3%
 
+.scroll-down {
+	height: 20vh;
+	background-color: #558C89;
+	color: #ECECEA;
+	border: 0px;
+}
+
+.nav-icon {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+
+
+
+.scroll-down a:link {
+	color: #74AFAD;
+}
+
+.scroll-down a:visited {
+	color: #74AFAD;
+}
+
+.scroll-down a:hover {
+	color: #558C89;
+}
+
+.nav-icon:hover {
+	background-color: #74AFAD;
 }
 
 #about {
@@ -66,9 +104,11 @@ h3 {
 	bottom: 0px;
 }
 
-.scrollspy-button {
-	/* arrange on screen for different devices vielleicht: abstand mit rows, die aus 6 spalten bestehen und sich übereinander schieben*/
+.intro {
+	width: 100%;
+	height: 100%;
 }
+
 
 .filled-column {
 	position: relative;
@@ -89,12 +129,14 @@ h3 {
 }
 
 .filled-column:hover .description {
-	opacity: 0.6;
+	opacity: 0.52;
 }
 
 #contact {
 	position: relative;
 	height: 100vh;
+	background-color: #ECECEA;
+	color: #558C89;
 }
 
 #contact p {
@@ -125,7 +167,7 @@ a:visited {
 	color: #D9853B;
 }
 a:hover {
-	color: #74AFAD;
+	color: #558C89;
 }
 
 #copyright {
@@ -152,19 +194,30 @@ a:hover {
 	color: #D9853B;
 }
 
+
 .dropdown {
-    color: #ECECEA;
-    background-color: #558C89;
     position: fixed;
     right: 5%;
     top: 5%;
     z-index: 5;
+    opacity: 1;
 
 }
 
 .dropdown i {
-	padding-top: 3px;
-	padding-left: 5px;
-	padding-right: 5px;
+	color: #ECECEA;
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
 	padding-bottom: 0px;
+}
+
+.btn-default {
+	color: #ECECEA;
+	background: #558C89;
+	border: 0px;
+}
+
+.btn-default:hover {
+	background: #D9853B;
 }

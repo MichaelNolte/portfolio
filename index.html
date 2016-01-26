@@ -43,12 +43,11 @@
     });
   </script>
 
-    <div class="dropdown" role="navigation">
-      <div id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="border-radius">
-        <i class="fa fa-bars fa-3x"></i>
-        <span></span>
-      </div>
-      <ul class="dropdown-menu nav-element" aria-labelledby="dLabel">
+    <div class="dropdown nav-element" role="navigation">
+      <button id="dLabel" type="button" class="btn btn-default dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-bars fa-3x"></i>     
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dLabel">
         <li><a href="#header">top</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#projects">projects</a></li>
@@ -56,34 +55,38 @@
       </ul>
     </div>
     
-    <div id="content">   
-      <div id="header">
-          
-        <div class="title">          
-          <div class="main-title">
+    <div id="content" class="container-fluid">   
+      
+      <div id="header">   
+        <div class="row title">          
+          <div class="col-sx-12 main-title">
             <h1>web development portfolio</h2>
           </div>
-          <div class="subtitle">
+          <div class="col-sx-12 subtitle">
             <h2>michael nolte</h1>
           </div>
         </div>
-        
-        <div class="logo center-block">
-          <img src="images/settings4.svg">
-        </div>  
-        
-        <div class="scrollspy-button nav-element">
-          <a href="#about"><i class="fa fa-chevron-circle-down fa-5x"></i></a>
-        </div>
 
+       
+        <div class="row scroll-down nav-element">          
+          <a href="#about">
+            <div class="col-xs-12 nav-icon">
+              <i class="fa fa-angle-down fa-5x"></i>
+            </div>         
+          </a>     
+        </div>
       </div>
+    
 
-
-      <div id="about" class="container-fluid">
-        <div type="button" data-toggle="collapse" data-target="#demo">
+      <div id="about">
+        <div class="intro">
           <p>hi, i am michael. i take web development classes at udacity. on this page i showcase my projects.<br>click on this bar to learn more about me.</p>
-        </div>
-        <div id="demo" class="collapse about-details">
+
+          <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo">
+          click here
+          </button>
+         
+          <div id="demo" class="collapse about-details">
             <div class="row">
               <div class="col-xs-4">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -93,14 +96,13 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-            
+            </div>
           </div>
         </div>
       </div>
-
    
 
-      <div id="projects" class="container-fluid">
+      <div id="projects">
         
         <div class="row">
           <div class="col-xs-6 filled-column">
