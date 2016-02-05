@@ -1,12 +1,9 @@
 /* to-do's: */
-/* change navigation button in active and focus state */
 /* style navbar dropdown or even use other system of navigation */
 
 
 
 body {
-	background-color: #ECECEA;
-	color: #558C89;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	data-spy="scroll";
@@ -31,33 +28,60 @@ body {
 #header {
 	height: 100vh;
 	position: relative;
-	padding-top: 6vh;
 }
 
-.title {
-	min-height:80vh;
-	padding-left: 7%;
-	padding-right: 7%;
+.title-image {
+	min-height: 100vh;
+	background: url(images/stefan-muntwyler-web.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .main-title {
-	padding-bottom: 2%;
+	padding-bottom: 1%;
 }
 
 .subtitle {
-	padding-bottom: 3%;
+	padding-bottom: 2%;
 }
 
+div.transbox {
+	position: relative;
+    top: 20vh;
+    display: inline-block;
+}
 
 h1 {	
 	font-weight: 900;
-	color: #D9853B;	
-	font-size: 8vw;
+	color: #303C3A;	
+	font-size: 35px;
+	color: #EBE5E9;
+	background-color: rgba(48,60,58,0.8);
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
 }
 
 h2 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 25px;
+    margin: 0;
+    color: #EBE5E9;
+    background-color: rgba(48,60,58,0.8);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
 }
 
 p {
@@ -65,49 +89,57 @@ p {
 }
 
 h3 {
-	color: #D9853B;
-	font-size: 8vw;
-	font-weight: 900
+	font-weight: 600;
+	color: #303C3A;	
+	font-size: 25px;
+	color: #EBE5E9;
+	background-color: rgba(48,60,58,0.8);
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 
 .scroll-down {
-	height: 20vh;
-	background-color: #558C89;
-	color: #ECECEA;
+	position: absolute;
+	height: 45px;
+	background-color: #4B6773;
+	color: #4B6773;
 	border: 0px;
+	z-index: 10;
+	bottom: 0;
 }
 
 .nav-icon {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 3px;
 	padding-left: 0px;
 }
 
 
 
 .scroll-down a:link {
-	color: #74AFAD;
+	color: #727682;
 }
 
 .scroll-down a:visited {
-	color: #74AFAD;
+	color: #727682;
 }
 
 .scroll-down a:hover {
-	color: #558C89;
+	color: #4B6773;
 }
 
 .nav-icon:hover {
-	background-color: #74AFAD;
+	background-color: #727682;
 }
 
 #about {
 	padding: 0px;
-	color: #ECECEA;
+	color: #EBE5E9;
 	padding-top: 6px;
 	padding-bottom: 0px;
-	background-color: #558C89;
+	background-color: #4B6773;
 	width: 100%;
 	position: relative;
 	bottom: 0px;
@@ -125,11 +157,31 @@ h3 {
 
 
 .btn-info {
-	background: #558C89;
+	background: #4B6773;
 	border: 0px;
 	font-size: 2.5vw;
 	font-weight: 900;
 }
+
+.btn-default {
+	color: #EBE5E9;
+	background: rgba(48,60,58,0.8);
+	border: 0px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	padding-right: 8px;
+	padding-left: 8px;
+	border-radius: 50%;
+}
+
+.btn-default:hover, .btn-default:active:hover {
+	background: #303C3A;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.focus, .btn-default:active.focus, .btn-default:active:focus, .btn-default:focus, .open>.dropdown-toggle.btn-default, .open>.dropdown-toggle.btn-default:hover, .open>.dropdown-toggle.btn-default:focus {
+    background: rgba(48,60,58,0.8);
+}
+
 
 
 
@@ -155,7 +207,7 @@ h3 {
 
 .btn-info.active.focus, .btn-info.active:focus, .btn-info.focus, .btn-info:active.focus, .btn-info:active:focus, .btn-info:focus, .btn-info:hover {
     outline: 0;
-    background: #558C89;
+    background: #4B6773;
     border: 0;
     -webkit-box-shadow: none;
           box-shadow: none;
@@ -174,24 +226,18 @@ h3 {
 	top: 0px;
 	width: 100%;
 	min-height: 100%;
-	background: #558C89;
-	color: #ECECEA;
+	background: #4B6773;
+	color: #EBE5E9;
 	opacity: 0;
 }
 
 .filled-column:hover .description {
-	opacity: 0.52;
+	opacity: 0.8;
 }
 
 #contact {
 	position: relative;
 	height: 100vh;
-	background-color: #ECECEA;
-	color: #558C89;
-}
-
-#contact p {
-	font-size: 4vw;
 }
 
 i {
@@ -203,51 +249,86 @@ i {
 }
 
 .how-to-connect {
-	height: 94vh;
+	height: 100vh;
 }
 
-.connect {
-	padding-top: 10vh;
+.connect1 {
+	position: relative;
+    top: 15vh;
+    display: inline-block;
+    margin-left: 15vw;
+    margin-right: 15vw
+}
+
+.connect2 {
+	position: relative;
+    top: 20vh;
+    display: inline-block;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.connect2 p {
+	font-weight: 300;
+	font-size: 20px;
+	color: #EBE5E9;
+	background-color: rgba(48,60,58,0.8);
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.connect3 {
+	position: relative;
+    top: 25vh;
+    display: inline-block;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .connect-icons {
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+	color: #EBE5E9;
+	background-color: rgba(48,60,58,0.8);
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
+
 a:link {
-    color: #D9853B;
+    color: #EBE5E9;
 }
 a:visited {
-	color: #D9853B;
+	color: #EBE5E9;
 }
 a:hover {
-	color: #558C89;
+	color: #4B6773;
 }
 
 #copyright {
 	position: absolute;
 	bottom: 0px;
-	background-color: #558C89;
+	background-color: #4B6773;
 	padding-top: 6px;
 	padding-bottom: 6px;	
 	width: 100%;
-	height: 6vh;
+	height: 40px;
 }
 
 #copyright p {
 	font-size: 10px;
-	color: #ECECEA;
+	color: #EBE5E9;
 	margin-bottom: 0;
+	font-weight: 300;
 }
 
 #copyright a {
-	color: #ECECEA;
+	color: #EBE5E9;
 	text-decoration: underline;
 }
 
 #copyright a:hover {
-	color: #D9853B;
+	color: #303C3A;
 }
 
 
@@ -260,21 +341,25 @@ a:hover {
 
 }
 
+.dropdown-menu {
+	background-color: #EBE5E9;
+	font-size: 16px;
+	width: 100%;
+}
+
+.dropdown-menu>li>a {
+	color: #4B6773;
+	text-align: center;
+	
+}
+
+.dropdown-menu>li>a:hover {
+	background-color: #fbf3f1;
+	height: 100%;
+}
+
 .dropdown i {
-	color: #ECECEA;
+	color: #EBE5E9;
 	padding: 0px;
 }
 
-.btn-default {
-	color: #ECECEA;
-	background: #558C89;
-	border: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 2px;
-	padding-bottom: 0px;
-}
-
-.btn-default:hover {
-	background: #D9853B;
-}
