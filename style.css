@@ -54,10 +54,9 @@ div.transbox {
 }
 
 h1 {	
-	font-weight: 900;
-	color: #303C3A;	
+	font-weight: 700;
+	color: #EBE5E9;	
 	font-size: 35px;
-	color: #EBE5E9;
 	background-color: rgba(48,60,58,0.8);
     margin: 0;
     padding-top: 15px;
@@ -74,7 +73,7 @@ h2 {
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 25px;
     margin: 0;
     color: #EBE5E9;
@@ -84,12 +83,33 @@ h2 {
     
 }
 
+@media(max-width:500px){
+	h1 {
+    	border-radius: 0px;
+
+    }
+    
+    h2 {
+    	border-radius: 0;
+    
+	}
+
+	div.transbox {
+		position: relative;
+    	top: 20vh;
+    	display: block;
+    }
+}
+
+
+
 p {
-	font-size: 3vw;
+	font-size: 3.4vw;
+	font-weight: 700;
 }
 
 h3 {
-	font-weight: 600;
+	font-weight: 700;
 	color: #303C3A;	
 	font-size: 25px;
 	color: #EBE5E9;
@@ -101,11 +121,11 @@ h3 {
 }
 
 
+
 .scroll-down {
 	position: absolute;
 	height: 45px;
 	background-color: #4B6773;
-	color: #4B6773;
 	border: 0px;
 	z-index: 10;
 	bottom: 0;
@@ -155,13 +175,24 @@ h3 {
 	padding-right: 8%;
 }
 
-
 .btn-info {
 	background: #4B6773;
 	border: 0px;
 	font-size: 2.5vw;
 	font-weight: 900;
 }
+
+.btn-info.active.focus, .btn-info.active:focus, .btn-info.focus, .btn-info:active.focus, .btn-info:active:focus, .btn-info:focus, .btn-info:hover {
+    outline: 0;
+    background: #4B6773;
+    border: 0;
+    -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+
+
 
 .btn-default {
 	color: #EBE5E9;
@@ -180,23 +211,21 @@ h3 {
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.focus, .btn-default:active.focus, .btn-default:active:focus, .btn-default:focus, .open>.dropdown-toggle.btn-default, .open>.dropdown-toggle.btn-default:hover, .open>.dropdown-toggle.btn-default:focus {
     background: rgba(48,60,58,0.8);
+    outline: none;
 }
 
-
-
-
 .portrait img {
-	min-width: 50px;
+	max-width: 70px;
 }
 
 
 .portrait {
-   padding-top: 9vmax;
+   padding-top: 7vmax;
 }
 
 .about-me {
-	padding-top: 9vmax;
-	padding-bottom: 5vmax;
+	padding-top: 4vmax;
+	padding-bottom: 4vmax;
 }
 
 .about-me p{
@@ -205,13 +234,25 @@ h3 {
 	text-align: justify;
 }
 
-.btn-info.active.focus, .btn-info.active:focus, .btn-info.focus, .btn-info:active.focus, .btn-info:active:focus, .btn-info:focus, .btn-info:hover {
-    outline: 0;
-    background: #4B6773;
-    border: 0;
-    -webkit-box-shadow: none;
-          box-shadow: none;
+@media(min-width:768px) {
+	.portrait img {
+		max-width: 90px;
+	}
+	
+	.portrait {
+   		padding-top: 7vmax;
+	}
+
+	.about-me {
+		padding-top: 7vmax;
+		padding-bottom: 3vmax;
+	}
+
+	.about-me p{
+		font-size: 18px;		
+	}
 }
+
 
 .filled-column {
 	position: relative;
@@ -328,7 +369,7 @@ a:hover {
 }
 
 #copyright a:hover {
-	color: #303C3A;
+	color: #dfccc5;
 }
 
 
@@ -336,7 +377,7 @@ a:hover {
     position: fixed;
     right: 4%;
     top: 5%;
-    z-index: 5;
+    z-index: 15;
     opacity: 1;
 
 }
@@ -361,5 +402,17 @@ a:hover {
 .dropdown i {
 	color: #EBE5E9;
 	padding: 0px;
+}
+
+@media(min-width:917px) {
+
+	p {
+		font-size: 35px;
+	}
+
+	.btn-info {
+		font-size: 25px;
+	}
+
 }
 
