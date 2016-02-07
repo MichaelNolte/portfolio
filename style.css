@@ -2,7 +2,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	data-spy="scroll";
 	position: relative;
 	background: #4b6773;
 }
@@ -39,9 +38,6 @@ i {
 .title-image {
 	min-height: 100vh;
 	background: url(images/stefan-muntwyler-web.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -218,10 +214,10 @@ h2 {
 	font-weight: 900;
 	padding-left: 8%;
 	padding-right: 8%;
-	margin-top: 45;
+	margin-top: 45px;
 }
 
-p {
+h3 {
 	font-weight: 700;
 	font-size: 3vmax;
 }
@@ -246,14 +242,13 @@ p {
     color: #ebe5e9;
     background: #4b6773;
     border: 0;
-    -webkit-box-shadow: none;
-          box-shadow: none;
+    box-shadow: none;
 }
 
 /*set font size for larger devices in about section*/
 @media(min-width: 917px) {
 
-	p {
+	h3 {
 		font-size: 35px;
 	}
 
@@ -343,14 +338,14 @@ p {
     margin-right: 15vw
 }
 
-h3 {
+h4 {
 	font-weight: 700;
 	font-size: 35px;
     padding: 10px;
     border-radius: 5px;
 }
 
-h4 {
+h5 {
 	font-weight: 300;
 	font-size: 20px;
 	padding: 10px;
