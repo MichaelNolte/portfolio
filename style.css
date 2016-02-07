@@ -411,6 +411,8 @@ a:hover {
 .dropdown-menu .divider {
 	margin: 0;
 	padding: 0;
+	background-color: #4B6773;
+	opacity: 0.8;
 }
 
 .dropdown-menu>li>a {
