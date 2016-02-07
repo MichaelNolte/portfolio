@@ -8,48 +8,48 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="bootstrap/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:700,300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href= "style.css">
-
 	</head>
 
   <body data-spy="scroll" data-target="#myScrollspy">
-    
+
+    <!-- script adds smooth scrolling -->
     <script>
-    $(document).ready(function(){
-      // Add scrollspy to <body>
-      $('body').scrollspy({target: ".nav-element", offset: 50});   
+      $(document).ready(function(){
+        // Add scrollspy to <body>
+        $('body').scrollspy({target: ".nav-element", offset: 50});
 
-      // Add smooth scrolling on all links inside the navbar
-      $(".nav-element a").on('click', function(event) {
+        // Add smooth scrolling on all links inside the navbar
+        $(".nav-element a").on('click', function(event) {
 
-        // Prevent default anchor click behavior
-        event.preventDefault();
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-        // Store hash
-        var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-   
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
         });
       });
-    });
-  </script>
+    </script>
 
-
-    <nav class="dropdown nav-element" role="navigation" id="myScrollspy">
+    <nav class="dropdown-button nav-element" role="navigation" id="myScrollspy"> <!-- menu icon on right top of page-->
       <button id="dLabel" type="button" class="btn btn-default dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fa fa-bars fa-2x"></i>     
+        <i class="fa fa-bars fa-2x"></i>
       </button>
-      <ul class="nav dropdown-menu col-sx-12 dropdown-menu-right" aria-labelledby="dLabel" data-spy="affix">
-        <li><a href="#header">home</a></li>
+
+      <ul class="nav dropdown-menu col-sx-12 dropdown-menu-right" aria-labelledby="dLabel" data-spy="affix"><!-- dropdown -->
+        <li><a href="#title-page">home</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#contact">contact</a></li>
@@ -58,42 +58,39 @@
         back to page</a></li>
       </ul>
     </nav>
-    
-    
 
-    <div id="content" class="container-fluid">   
-      
-      <header id="header">   
+    <div id="content container-fluid">
+
+      <div id="title-page"> <!-- first section: page title -->
         <div class="title-image">
-          
-
-          <div class="transbox">
-
-
-            <h1>web development portfolio</h1>
-            <h2>michael nolte</h2>
+          <div class="title-contours">
+            <h1 class="shadow-box">web development portfolio</h1>
+            <h2 class="shadow-box">michael nolte</h2>
           </div>
         </div>
 
-       
-        <div class="row scroll-down nav-element">          
-          <a href="#about">
-            <div class="col-xs-12 nav-icon">
-              <i class="fa fa-angle-down fa-3x"></i>
-            </div>         
-          </a>     
-        </div>
-      </header>
-    
+        <div class="row scroll-down nav-element"><!-- nav element indicating that page is scrollable-->
+          <div class="row">
+            <a href="#about">
+              <div class="col-xs-12 nav-icon">
+                <i class="fa fa-angle-down fa-3x"></i>
+              </div>
+            </a>
 
-      <section id="about">
+          </div>
+        </div>
+      </div>
+
+
+      <section id="about"><!-- second section: about me -->
         <div class="intro">
           <p>hi, i am michael. i take web development classes at udacity. on this page i showcase my projects.</p>
 
           <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
           read more +
-          </button>
-          
+          </button> <!-- button to expand section for more information -->
+
+          <!-- change text in button on click -->
           <script>
           $('.btn-info').click(function(){
             $(this).text(function(i,old){
@@ -102,33 +99,33 @@
           });
           </script>
 
-          <div id="demo" class="collapse about-details">
+          <div id="demo" class="collapse"><!-- expanded information -->
             <div class="row">
               <div class="col-xs-12 col-sm-2 portrait">
-                <img src="images/portrait.png" class="img-circle" alt="portrait michael nolte">
+                <img src="images/portrait.jpg" class="img-circle" alt="portrait michael nolte">
               </div>
               <div class="text-left about-me col-xs-12 col-sm-10">
                 <p>i am into web development, because the www fascinates me, and i want to learn all about it. but that is not the only reason for taking udacity classes.</p>
                 <p>web development also helps me with my job. i work as e-learning specialist at sodexo services gmbh. developing online courses requires me to visually convey content, think about user interfaces, and generate reports. it confronts me with the same questions that i face when building web sites.</p>
                 <p>finally, web development counterbalances my intellectual interests. i have a classical education in social sciences. that turns me into a nerd. i like literature, history, and philosophy. coding makes me enter a different mode of thinking. i am fascinated by this new body of knowledge, and i enjoy acquiring it.</p>
-              </div>       
+              </div>
             </div>
           </div>
         </div>
       </section>
-   
 
-      <section id="projects">
-        
+
+      <section id="projects"><!-- third section: my projects -->
+
         <div class="row">
           <div class="col-xs-12 col-sm-6 filled-column">
               <img src="http://placehold.it/2000x1000" class="img-responsive" alt="project02">
               <div class="description">
                 <h4>Description01</h4>
                 <p>Text</p>
-              </div>       
+              </div>
           </div>
-        
+
           <div class="col-xs-12 col-sm-6 filled-column">
             <img src="http://placehold.it/2000x1000" class="img-responsive" alt="project02">
             <div class="description">
@@ -192,27 +189,31 @@
           </div>
         </div>
       </section>
-    
-      <footer id="contact">
-        <div class="how-to-connect title-image">
-          <div class="connect1">
-            <h3>want to get in touch?</h3>
-          </div>
-          <div class="connect2">  
-            <p>shoot me a mail or connect via github or linkedin</p>
-          </div>  
-          <div class="connect3">
-            <div class="connect-icons">                
-              <a href="mailto:michaelnolte0815@gmail.com?Subject=I%20Visited%20Your%20Portfolio%20Page" target="_top">  <i class="fa fa-envelope-square fa-3x"></i></a>
-              <a href="https://github.com/MichaelNolte" title="github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
-              <a href="https://de.linkedin.com/in/michael-nolte-870016b4" title="linked.in" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+
+      <footer id="contact"><!-- footer: contact information and copyright information-->
+        <div class="footer-content">
+          <div class="title-image">
+            <div class="text-contours">
+              <h3 class="shadow-box">want to get in touch?</h3>
+            </div>
+            <div class="text-contours">
+              <h4 class="shadow-box">shoot me a mail or connect via github or linkedin</h4>
+            </div>
+            <div class="text-contours">
+              <div class="connect-icons shadow-box">
+                <a href="mailto:michaelnolte0815@gmail.com?Subject=I%20Visited%20Your%20Portfolio%20Page" target="_top">  <i class="fa fa-envelope-square fa-3x"></i></a>
+                <a href="https://github.com/MichaelNolte" title="github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+                <a href="https://de.linkedin.com/in/michael-nolte-870016b4" title="linked.in" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div id="copyright">  
-          <p><a href="https://www.flickr.com/photos/stefanmuntwyler/6945168122/" title="background photo on flickr" target="_blank">Background photo</a> by <a href="https://www.flickr.com/photos/stefanmuntwyler/" title="flickr profile stefan muntwyler" target="_blank">Stefan Muntwyler</a> is licensed under <a href="https://creativecommons.org/licenses/by-nd/2.0/" title="Creative Commons CC BY-ND 2.0" target="_blank">CC BY-ND 2.0</a><br>Font Awesome by Dave Gandy - <a href="http://fontawesome.io" title="fontawesome" target="_blank">http://fontawesome.io</a></p>
-        </div>       
+        <div id="copyright"><!-- copyright information -->
+          <div class="copyright-content">
+            <p><a href="https://www.flickr.com/photos/stefanmuntwyler/6945168122/" title="background photo on flickr" target="_blank">Background photo</a> by <a href="https://www.flickr.com/photos/stefanmuntwyler/" title="flickr profile stefan muntwyler" target="_blank">Stefan Muntwyler</a> is licensed under <a href="https://creativecommons.org/licenses/by-nd/2.0/" title="Creative Commons CC BY-ND 2.0" target="_blank">CC BY-ND 2.0</a><br>Font Awesome by Dave Gandy - <a href="http://fontawesome.io" title="fontawesome" target="_blank">http://fontawesome.io</a></p>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
