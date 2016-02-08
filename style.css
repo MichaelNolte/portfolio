@@ -135,12 +135,6 @@ i {
 	opacity: 0.8;
 }
 
-
-/*Title-page*/
-.title-page {
-	height: 100vh;
-}
-
 /*text on title page*/
 .title-contours {
 	position: relative;
@@ -237,7 +231,8 @@ h3 {
 .btn-info:active.focus,
 .btn-info:active:focus,
 .btn-info:focus,
-.btn-info:hover {
+.btn-info:hover,
+.btn-info:active:hover {
     outline: 0;
     color: #ebe5e9;
     background: #4b6773;
@@ -273,10 +268,6 @@ h3 {
 
 .portrait img {
 	max-width: 70px;
-}
-
-.col-xs-10 {
-	padding-left: 25px;
 }
 
 /*style about-me-box for larger screens (about section)*/
