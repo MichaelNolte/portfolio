@@ -37,7 +37,10 @@ i {
 /*background-image on title and footer page*/
 .title-image {
 	min-height: 100vh;
-	background: url(images/stefan-muntwyler-web.jpg) no-repeat center center fixed;
+	background-image: url(images/stefan-muntwyler-web-xl_1680.jpg);
+	background-image: -webkit-image-set(url(images/stefan-muntwyler-web-xl_1680.jpg) 1x, url(images/stefan-muntwyler-web-xxxl_3072.jpg) 2x);
+    background-repeat: no-repeat;
+    background-position: center fixed;
     background-size: cover;
 }
 
